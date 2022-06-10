@@ -48,7 +48,7 @@ $(function() {
     })
 
     // 监听登录表单的提交事件
-    $('#form_login').on('submit', function(e) {
+    $('#form_login').submit(function(e) {
         // 1.阻止默认的提交行为
         e.preventDefault();
         $.ajax({
@@ -66,7 +66,7 @@ $(function() {
                 // 将登录成功后的token字符串， 保存到localStorage中
                 localStorage.setItem('token', res.token)
                     // 跳转到后台主页
-                    // location.href = '/index.html'
+                location.href = '/index.html'
             }
         })
     })
