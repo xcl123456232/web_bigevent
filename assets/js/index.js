@@ -73,4 +73,5 @@ function renderAvatar(user) {
             .show()
     }
 
+
 }
